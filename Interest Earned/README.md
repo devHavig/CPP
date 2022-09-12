@@ -1,8 +1,8 @@
-# Landing Page
+# Interest Earned
 
 Jerrod Havig
 
-CIS 5 Programming logic using C++
+CIS 5 Programming Logic Using C++
 
 ## 🎯 Objectives
 
