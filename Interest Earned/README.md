@@ -2,7 +2,7 @@
 
 Jerrod Havig
 
-The Odin Project - landing page
+CIS 5 Programming logic using C++
 
 ## 🎯 Objectives
 
