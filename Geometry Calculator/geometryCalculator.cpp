@@ -46,42 +46,67 @@ int main()
     case 2: // Area of Rectangle
         float length, width;
 
-        if (radius < 0) // No negative numbers
+        cout << "What is the length?" << endl;
+        cin >> length;
+
+        if (length > 0)
         {
-            cout << "The radius must be a positive number";
-            cout << "Try again" << endl;
-        }
-        else
-        {
-            cout << "What is the length?" << endl;
-            cin >> length;
             cout << "What is the width?" << endl;
             cin >> width;
             cout << endl;
 
-            area = length * width;
-
-            cout << "The Area of a Rectangle is: " << endl;
-            cout << area << endl;
+            if (width > 0)
+            {
+                area = length * width;
+            }
+            else
+            {
+                cout << "The width must be a positive number" << endl;
+                cout << "Try again" << endl;
+            }
         }
+        else
+        {
+            cout << "The length must be a positive number" << endl;
+            cout << "Try again" << endl;
+        }
+        cout << "The Area of a Rectangle is: " << endl;
+        cout << area << endl;
         break;
     case 3: // Area of Triangle
         float base, height;
 
-        if (radius < 0) // No negative numbers
+        cout << "What is the base? " << endl;
+        cin >> base;
+
+        if (base > 0)
         {
-            cout << "The radius must be a positive number";
-            cout << "Try again" << endl;
+            cout << "What is the height" << endl;
+            cin >> height;
+            cout << endl;
+
+            if (height > 0)
+            {
+                area = (base * height) * .5;
+            }
+            else
+            {
+                cout << "The height must be a positive number" << endl;
+                cout << "Try again" << endl;
+            }
         }
         else
         {
-            area = base * height * .5;
-
-            cout << "The area of a triangle is: " << endl;
-            cout << area << endl;
+            cout << "The base must be a positive number" << endl;
+            cout << "Try again" << endl;
         }
+        cout << "The area of a triangle is: " << endl;
+        cout << area << endl;
         break;
+    case 4:
+
     default:
+
         break;
     }
 
