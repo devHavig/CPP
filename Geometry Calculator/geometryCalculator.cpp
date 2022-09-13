@@ -1,3 +1,5 @@
+// Geometry Calculator
+// CIS 5 Programming Logic Using C++
 #include <iostream>
 #include <cmath>
 
@@ -22,13 +24,13 @@ int main()
     switch (user_choice)
     {
         float area;
-    case 1:
+    case 1: // Area of Circle
         int radius;
 
         cout << "Enter  the radius: ";
         cin >> radius;
 
-        if (radius < 0)
+        if (radius < 0) // No negative numbers
         {
             cout << "The radius must be a positive number";
             cout << "Try again" << endl;
@@ -41,10 +43,10 @@ int main()
             cout << area << endl;
         }
         break;
-    case 2:
+    case 2: // Area of Rectangle
         float length, width;
 
-        if (radius < 0)
+        if (radius < 0) // No negative numbers
         {
             cout << "The radius must be a positive number";
             cout << "Try again" << endl;
@@ -58,15 +60,15 @@ int main()
             cout << endl;
 
             area = length * width;
-            
+
             cout << "The Area of a Rectangle is: " << endl;
             cout << area << endl;
         }
         break;
-    case 3:
+    case 3: // Area of Triangle
         float base, height;
 
-        if (radius < 0)
+        if (radius < 0) // No negative numbers
         {
             cout << "The radius must be a positive number";
             cout << "Try again" << endl;
