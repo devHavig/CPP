@@ -12,7 +12,7 @@ int main()
 
     cout << endl;
     cout << "Geometry Calculator" << endl;
-    cout << "1. Calulate the Area of a  Circle" << endl;
+    cout << "1. Calulate the Area of a Circle" << endl;
     cout << "2. Calulate the Area of a Rectangle" << endl;
     cout << "3. the Area of a Triangle" << endl;
     cout << "4. Quit" << endl;
@@ -27,13 +27,14 @@ int main()
     case 1: // Area of Circle
         int radius;
 
-        cout << "Enter  the radius: ";
+        cout << "Enter the radius: ";
         cin >> radius;
+        cout << endl;
 
         if (radius < 0) // No negative numbers
         {
-            cout << "The radius must be a positive number";
-            cout << "Try again" << endl;
+            cout << "The radius must be a positive number" << endl;
+            cout << "Please try again" << endl;
         }
         else
         {
@@ -48,6 +49,7 @@ int main()
 
         cout << "What is the length?" << endl;
         cin >> length;
+        cout << endl;
 
         if (length > 0)
         {
@@ -58,26 +60,27 @@ int main()
             if (width > 0)
             {
                 area = length * width;
+                cout << "The Area of a Rectangle is: " << endl;
+                cout << area << endl;
             }
             else
             {
                 cout << "The width must be a positive number" << endl;
-                cout << "Try again" << endl;
+                cout << "Please try again" << endl;
             }
         }
         else
         {
             cout << "The length must be a positive number" << endl;
-            cout << "Try again" << endl;
+            cout << "Please try again" << endl;
         }
-        cout << "The Area of a Rectangle is: " << endl;
-        cout << area << endl;
         break;
     case 3: // Area of Triangle
         float base, height;
 
-        cout << "What is the base? " << endl;
+        cout << "What is the base length? " << endl;
         cin >> base;
+        cout << endl;
 
         if (base > 0)
         {
@@ -88,25 +91,27 @@ int main()
             if (height > 0)
             {
                 area = (base * height) * .5;
+                cout << "The area of a triangle is: " << endl;
+                cout << area << endl;
             }
             else
             {
                 cout << "The height must be a positive number" << endl;
-                cout << "Try again" << endl;
+                cout << "Please try again" << endl;
             }
         }
         else
         {
             cout << "The base must be a positive number" << endl;
-            cout << "Try again" << endl;
+            cout << "Please try again" << endl;
         }
-        cout << "The area of a triangle is: " << endl;
-        cout << area << endl;
         break;
     case 4:
-
+        cout << "Goodbye" << endl;
+        break;
     default:
-
+        cout << "You must choose a number between 1 and 4" << endl;
+        cout << "Rerun program" << endl;
         break;
     }
 
