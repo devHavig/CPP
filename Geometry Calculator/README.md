@@ -24,4 +24,4 @@ CIS 5 Programming Logic Using C++
 ## 📝 What I learned
 
 - Use switch case statements to allow user a choice of shapes
-- Use if else statements to validate input value
+- Validate User Input using if else statements
